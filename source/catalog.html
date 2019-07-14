@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+
+<body>
+
+  <!-- ТУТ ШАПКА СТРАНИЦЫ-->
+
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="150" height="50" alt="Мишка">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>ГЛАВНАЯ НАВЕРНОЕ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">ЧТО ТО БУДЕТ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">ЧТО ТО БУДЕТ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">ЧТО ТО БУДЕТ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">ЧТО ТО ЕЩЕ БУДЕТ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__login" href="login.html">Войти</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="page-header__wrapper">
+      <h1 class="page-header__title"> Каталог товаров </h1>
+    </div>
+  </header>
+
+  <!-- ТУТ КАТАЛОГ-->
+
+  <main class="page-main">
+    <section class="catalog-list__wrapper">
+      <h2 class="visually-hidden">Каталог товаров</h2>
+      <div class="catalog-item">
+        <img src="img/zaychik" width="150px" height="150px" alt="Зайчик-попрыгайчик">
+        <div class="catalog-item__definition">
+          <a class="catalog-item__name-link" href="#">Зайчик попрыгайчик</a>
+          <div class="catalog-item__param">Рост 30 см, вес 200 г </div>
+          <div class="catalog-item__buy">
+            <div class="catalog-item__price">1200 руб.</div>
+            <a href="cart.html" class="btn btn--catalog-order">
+              <svg width="20px" height="20px">
+                Заказать
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="catalog-item">
+        <img src="img/zaychik" width="150px" height="150px" alt="Корзинка для белья">
+        <div class="catalog-item__definition">
+          <a class="catalog-item__name-link" href="#">Корзинка для белья</a>
+          <div class="catalog-item__param">Диаметр 15 см, высота 10см </div>
+          <div class="catalog-item__buy">
+            <div class="catalog-item__price">690 руб.</div>
+            <a href="cart.html" class="btn btn--catalog-order">
+              <svg width="20px" height="20px">
+                Заказать
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="catalog-item">
+        <img src="img/zaychik" width="150px" height="150px" alt="Большая корзинка для игрушек">
+        <div class="catalog-item__definition">
+          <a class="catalog-item__name-link" href="#">Большая корзинка для игрушек</a>
+          <div class="catalog-item__param">Диаметр 30 см, высота 30см </div>
+          <div class="catalog-item__buy">
+            <div class="catalog-item__price">1500 руб.</div>
+            <a href="cart.html" class="btn btn--catalog-order">
+              <svg width="20px" height="20px">
+                Заказать
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="video-container" <!-- ТУТ ДОЛЖНО БЫТЬ ВИДЕО-->
+
+      </div>
+    </section>
+
+  </main>
+
+  <!--ТУТ ФУТЕР-->
+
+  <footer class="footer-page">
+    <div class="social-wrapper">
+      <ul class="social-navigation">
+        <li><a class="social-button" href="#"> <img src="img/instagram.svg" width="34" height="34" alt="Ссылка на инстаграм"></a></li>
+        <li><a class="social-button" href="#"> <img src="img/fb.svg" width="34" height="34" alt="Ссылка на фейсбук"> </a></li>
+        <li><a class="social-button" href="#"> <img src="img/twitter.svg" width="34" height="34" alt="Ссылка на твиттер"></a></li>
+      </ul>
+    </div>
+    <div class="footer-page__copyright">
+      <a href="htmlacademy.ru" class="footer-page__copyright-link">
+        Разработано
+        <svg width="40px" height="40px" alt="Логотип HTML-academy">
+      </a>
+  </footer>
+</body>
+
+</html>
