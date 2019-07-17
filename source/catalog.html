@@ -48,7 +48,7 @@
 
   <!-- ТУТ КАТАЛОГ-->
 
-  <main class="page-main">
+  <main class="catalog-list">
     <section class="catalog-list__wrapper">
       <h2 class="visually-hidden">Каталог товаров</h2>
       <div class="catalog-item">
@@ -58,7 +58,7 @@
           <div class="catalog-item__param">Рост 30 см, вес 200 г </div>
           <div class="catalog-item__buy">
             <div class="catalog-item__price">1200 руб.</div>
-            <a href="cart.html" class="btn btn--catalog-order">
+            <a href="cart.html" class="btn btn--catalog-order catalog-item__link">
               <svg width="20px" height="20px">
                 Заказать
             </a>
@@ -106,13 +106,25 @@
 
   <footer class="footer-page">
     <div class="social-wrapper">
-      <ul class="social-navigation">
-        <li><a class="social-button" href="#"> <img src="img/instagram.svg" width="34" height="34" alt="Ссылка на инстаграм"></a></li>
-        <li><a class="social-button" href="#"> <img src="img/fb.svg" width="34" height="34" alt="Ссылка на фейсбук"> </a></li>
-        <li><a class="social-button" href="#"> <img src="img/twitter.svg" width="34" height="34" alt="Ссылка на твиттер"></a></li>
+      <ul class="footer__social social-list">
+        <li class="social__item">
+          <a class="social-list__link social-list__link--instagram" href="#">
+            <img src="img/instagram.svg" width="34" height="34" alt="Ссылка на инстаграм">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social-list__link social-list__link--facebook" href="#">
+            <img src="img/fb.svg" width="34" height="34" alt="Ссылка на фейсбук">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social-list__link social-list__link--twitter" href="#">
+            <img src="img/twitter.svg" width="34" height="34" alt="Ссылка на твиттер">
+          </a>
+        </li>
       </ul>
     </div>
-    <div class="footer-page__copyright">
+    <div class="footer-page__copyright copyright">
       <a href="htmlacademy.ru" class="footer-page__copyright-link">
         Разработано
         <svg width="40px" height="40px" alt="Логотип HTML-academy">
