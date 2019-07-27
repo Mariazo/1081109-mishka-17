@@ -4,7 +4,35 @@
   background-size: 575px auto;
   background-color: #f9f9f9;
   background-position: 50% -15%;
+  display: flex;
+  flex-direction: column;
 }
+
+.page-header__logo {
+  height: 85px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    order: 2;
+    height: 400px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    height: 648px;
+  }
+}
+
+.page-header,
+.page-header__logo {
+  .no-outline();
+}
+
 
 .page-header__title,
 .page-header__title--catalog,
