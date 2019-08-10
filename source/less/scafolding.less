@@ -1,7 +1,37 @@
 body {
   font-family: "OpenSans", "Arial", sans-serif;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #000000;
+  background-color: #ffffff;
+  position: relative;
 }
 
 a {
   text-decoration: none;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 1200px;
+  }
 }

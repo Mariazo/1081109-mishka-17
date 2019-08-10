@@ -4,4 +4,26 @@
 
 .footer-page__wrapper {
   margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .footer-page {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    display: block;
+    margin-top: 20px;
+  }
 }
