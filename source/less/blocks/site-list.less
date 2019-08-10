@@ -1,0 +1,29 @@
+.site-list__item {
+  height: 79px;
+  border-bottom: 1px solid #ececec;
+}
+
+.site-list__item--cart,
+.site-list__item--catalog,
+.site-list__item--knitting,
+.site-list__item--src {
+  padding-top: 26px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.site-list__link {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    justify-content: space-around;
+  }
+}

@@ -6,3 +6,40 @@
 .catalog-list__item {
   margin: 0 auto 30px;
 }
+
+@media (min-width: @tablet-width) {
+  .catalog-item {
+    width: 80%;
+  }
+
+  .catalog-item img {
+    position: absolute;
+  }
+
+  .catalog-item__definition {
+    position: relative;
+    padding-left: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-list__item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog-list__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .catalog-item img {
+    position: relative;
+  }
+
+    .catalog-item__definition {
+      padding-left: 10%;
+      width: 50%;
+      align-items: flex-start;
+    }
+}
