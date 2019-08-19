@@ -12,18 +12,25 @@
   align-content: stretch;
 }
 
-.page-footer__logo {
+.footer-page__logo {
   display: none;
 }
 
 @media (min-width: @tablet-width) {
-  .footer-page {
+  .footer-page__box {
+    padding-top: 25px;
     display: flex;
-    justify-content: space-between;
   }
 
-  .page-footer__logo {
+  .footer-page__logo {
     display: block;
-    margin-top: 20px;
+    margin-top: 9px;
+    margin-left: 50px;
+    flex-basis: 183px;
+  }
+
+  .footer-page__copyright--container {
+    margin-top: -10px;
+    margin-right: 50px;
   }
 }

@@ -1,7 +1,10 @@
 .popular-product__wrapper {
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 28px 30px 34px;
+}
+
+.popular-product {
+  margin: 25px;
 }
 
 .popular-product__info {
@@ -77,18 +80,122 @@
 
 
 @media (min-width: @tablet-width) {
+  .popular-product::before {
+    content: "";
+    position: relative;
+    top: -14px;
+    left: 0;
+    display: block;
+    height: 24px;
+    width: 100%;
+    background: url("../img/bg-zigzag-fill.svg") repeat-x 0 0;
+    z-index: 1;
+  }
+
+  .popular-product {
+    margin: 0;
+  }
+
+  .popular-product__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding-bottom: 49px;
+  }
+
+  .popular-product__title {
+    margin: 18px auto 23px 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
   .popular-product__image {
-    width: 330px;
     position: absolute;
-    right: 0;
+    top: 8px;
+    right: 21px;
+    width: 333px;
+    height: 404px;
   }
 
   .popular-product__info {
     position: relative;
-    padding-right: 360px;
+    flex-wrap: wrap;
+    min-height: 415px;
+    min-width: 708px;
+    margin-top: 21px;
+    margin-right: auto;
+  }
+
+  .popular_product__desc {
+    margin: 0 400px 17px 0;
+    min-width: 290px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .popular-product__flag {
-    text-align: left;
+    order: -1;
+    margin-top: 30px;
+    margin-right: 45px;
+    width: 75px;
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .popular-product__definition-container {
+    margin: 19px 400px 56px 0;
+    min-width: 290px;
+    display: table;
+    border-collapse: collapse;
+  }
+
+  .popular-product__price {
+    font-size: 20px;
+    margin-right: 400px;
+    margin-bottom: 34px;
+    margin-left: 19px;
+    width: 40.7%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .popular-product__wrapper {
+    padding-top: 43px;
+  }
+
+  .popular-product__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-left: 6px;
+    padding-top: 63px;
+  }
+
+  .popular-product__flag {
+    padding-top: 66px;
+    margin-left: 65px;
+    order: 0;
+  }
+
+  .popular_product__desc {
+    width: 290px;
+    margin-left: 26%;
+  }
+
+  .popular-product__definition-container {
+    width: 290px;
+    margin: 31px auto 111px 175px;
+  }
+
+  .popular-product__image {
+    width: 525px;
+    height: 636px;
+    top: -158px;
+    right: -51%;
+    z-index: -1;
+  }
+
+  .popular-product__price {
+    width: 292px;
+    margin: 0 12px 33px 175px;
   }
 }

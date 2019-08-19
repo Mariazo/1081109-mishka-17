@@ -18,3 +18,34 @@
   font-weight: 700;
   color: #000000;
 }
+
+@media (min-width: @tablet-width) {
+  .about-us {
+    background-position: 19px 0;
+    background-size: 768px 17px;
+  }
+
+  .about-us__wrapper {
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 35px;
+  }
+
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-left: 16px;
+    margin-bottom: 70px;
+    padding-top: 41px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-us__title {
+    margin-top: 17px;
+    margin-bottom: 69px;
+    margin-left: 221px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
