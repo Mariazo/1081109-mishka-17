@@ -13,6 +13,16 @@
 .btn--popular-order {
   padding: 14px 0;
   border: 2px solid #444444;
+
+  &:hover {
+    color: white;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #444444;
+  }
 }
 
 .btn--catalog-order {
@@ -25,5 +35,19 @@
   .btn--catalog-order svg {
     fill: #000000;
     opacity: 0.2;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .btn--popular-order {
+    margin-left: 18px;
+    width: 40.7%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .btn--popular-order {
+    margin-left: 174px;
+    width: 288px;
   }
 }

@@ -11,8 +11,6 @@
 }
 
 .categories-list__item {
-  font-size: 19px;
-  line-height: 24px;
   font-weight: bold;
   color: white;
   position: relative;
@@ -62,6 +60,20 @@
 }
 
 @media (min-width: @tablet-width) {
+  .categories-list__link {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .categories-list__item--interior,
+  .categories-list__item--toys {
+    &::after {
+      top: 28px;
+    }
+  }
+
   .categories-list__item {
     width: 50%;
   }
