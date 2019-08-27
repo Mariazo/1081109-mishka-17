@@ -15,13 +15,19 @@
   <header class="page-header">
     <div class="page-header__container container">
       <nav class="main-nav main-nav--opened main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Меню</span>
-        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__logo">
-              <img class="site-list__logo-image" src="img/logo-mobile.svg" alt="Мишка">
+              <a href="index.html">
+                <picture>
+                  <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
+                  <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+                  <img src="img/logo-mobile.svg" alt="Логотип Мишки" class="site-list__logo-image">
+                </picture>
+              </a>
+              <button class="main-nav__toggle" type="button">
+                <span class="visually-hidden">Меню</span>
+              </button>
             </li>
             <li class="site-list__item site-list__item--catalog">
               <a href="catalog.html" class="site-list__link site-list__link--catalog">Каталог товаров</a>
@@ -58,7 +64,9 @@
         </div>
       </nav>
       <div class="page-header__wrapper">
-        <h1 class="page-header__title"> Милые штуки ручной работы для дома </h1>
+        <div class="page-header__title">
+          <h1 class="page-header__title--text"> Милые штуки ручной <br> работы для дома </h1>
+        </div>
         <div class="categories-list container">
           <div class="categories-list__item categories-list__item--interior">
             <a href="catalog-interior.html" class="categories-list__link"> Предметы <br> интерьера</a>
