@@ -4,62 +4,68 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <!-- ТУТ ШАПКА СТРАНИЦЫ-->
 
   <header class="page-header">
-    <div class="page-header__container container">
-      <nav class="main-nav main-nav--opened main-nav--nojs">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__logo">
-              <a href="index.html">
-                <picture>
-                  <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
-                  <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
-                  <img src="img/logo-mobile.svg" alt="Логотип Мишки" class="site-list__logo-image">
-                </picture>
-              </a>
-              <button class="main-nav__toggle" type="button">
-                <span class="visually-hidden">Меню</span>
-              </button>
-            </li>
-            <li class="site-list__item site-list__item--catalog">
-              <a href="catalog.html" class="site-list__link site-list__link--catalog">Каталог товаров</a>
-            </li>
-            <li class="site-list__item site-list__item--knitting">
-              <a href="form.html" class="site-list__link site-list__link--knitting">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item site-list__item--src">
-              <a href="#" class="site-list__link site-list__link--src">
-                <svg class="icon-src" width="17.6px" height="17.6px" >
-                  <use xlink:href="img/sprite.svg#icon-search"> </use>
-                </svg>Поиск по сайту</a>
-            </li>
-            <li class="site-list__item site-list__item--cart">
-              <a href="#" class="site-list__link site-list__link--cart">
-                <svg class="icon-cart" width="20.294px" height="18.849px">
-                      <use xlink:href="img/sprite.svg#icon-cart"> </use>
-                </svg>Корзина: пока пуста</a>
-            </li>
-            <li class="site-list__item site-list__item--new">
-              <a href="#" class="site-list__link site-list__link--new"> Новые поступления </a>
-            </li>
-            <li class="site-list__item site-list__item--sale">
-              <a href="#" class="site-list__link site-list__link--sale"> Распродажа </a>
-            </li>
-            <li class="site-list__item site-list__item--delivery">
-              <a href="#" class="site-list__link site-list__link--delivery"> Бесплатная доставка по России </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div class="page-header__wrapper">
+    <div class="page-header__container">
+      <div class="container">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__logo">
+                <a href="index.html">
+                  <picture>
+                    <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
+                    <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+                    <img src="img/logo-mobile.svg" alt="Логотип Мишки" class="site-list__logo-image">
+                  </picture>
+                </a>
+                <button class="main-nav__toggle" type="button">
+                  <span class="visually-hidden">Меню</span>
+                </button>
+              </li>
+              <li class="site-list__item site-list__item--catalog">
+                <a href="catalog.html" class="site-list__link site-list__link--catalog">Каталог товаров</a>
+              </li>
+              <li class="site-list__item site-list__item--knitting">
+                <a href="form.html" class="site-list__link site-list__link--knitting">Вязание на заказ</a>
+              </li>
+              <li class="site-list__item site-list__item--src">
+                <a href="#" class="site-list__link site-list__link--src">
+                  <svg class="icon-src" width="17.6px" height="17.6px">
+                    <use xlink:href="img/sprite.svg#icon-search"> </use>
+                  </svg>Поиск по сайту</a>
+              </li>
+              <li class="site-list__item site-list__item--cart">
+                <a href="#" class="site-list__link site-list__link--cart">
+                  <svg class="icon-cart" width="20.294px" height="18.849px">
+                    <use xlink:href="img/sprite.svg#icon-cart"> </use>
+                  </svg>Корзина: пока пуста</a>
+              </li>
+              <li class="site-list__item site-list__item--new">
+                <a href="#" class="site-list__link site-list__link--new"> Новые поступления </a>
+              </li>
+              <li class="site-list__item site-list__item--sale">
+                <a href="#" class="site-list__link site-list__link--sale"> Распродажа </a>
+              </li>
+              <li class="site-list__item site-list__item--delivery">
+                <a href="#" class="site-list__link site-list__link--delivery"> Бесплатная доставка по России </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="page-header__wrapper">
+      <div class="container">
         <div class="page-header__title">
           <h1 class="page-header__title--text"> Милые штуки ручной <br> работы для дома </h1>
         </div>
@@ -73,6 +79,7 @@
         </div>
       </div>
     </div>
+
   </header>
 
   <!--ТУТ ПРО ТОВАР НЕДЕЛИ-->
@@ -146,7 +153,7 @@
       <div class="footer-page__logo">
         <a href="index.html" class="footer-page__logo-link">
           <svg width="101.615px" height="34.056px">
-            <use xlink:href="img/sprite.svg#logo-footer">
+            <use xlink:href="img/sprite.svg#icon-logo-footer">
             </use>
           </svg>
         </a>
@@ -183,12 +190,13 @@
         <a href="htmlacademy.ru" class="footer-page__copyright copyright-link">
           <span class="copyright-link__text">Разработано</span>
           <svg width="27px" height="34px">
-            <use xlink:href="img/sprite.svg#logo-htmlacademy">
+            <use xlink:href="img/sprite.svg#icon-logo-htmlacademy">
             </use>
           </svg>
         </a>
-        </a>
+
       </div>
+    </div>
   </footer>
 
   <script>
